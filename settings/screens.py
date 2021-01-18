@@ -1,6 +1,4 @@
-# Antonio Sarosi
-# https://youtube.com/c/antoniosarosi
-# https://github.com/antoniosarosi/dotfiles
+#Javier Zetina
 
 # Multimonitor support
 
@@ -10,7 +8,7 @@ from settings.widgets import primary_widgets, secondary_widgets
 import subprocess
 
 
-status_bar = lambda widgets: bar.Bar(widgets, 20, opacity=0.9)
+status_bar = lambda widgets: bar.Bar(widgets, 20, opacity=0.9, margin=5)
 
 screens = [Screen(top=status_bar(primary_widgets))]
 

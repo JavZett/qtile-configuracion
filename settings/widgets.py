@@ -8,7 +8,7 @@ base = lambda fg='text', bg='dark': {
 
 separator = lambda: widget.Sep(**base(), linewidth=0, padding=5)
 
-icon = lambda fg='color1', bg="dark", fontsize=14, text="?": widget.TextBox(
+icon = lambda fg='color1', bg="dark", fontsize=12, text="?": widget.TextBox(
     **base(fg, bg),
     fontsize=fontsize,
     text=text,
@@ -18,7 +18,7 @@ icon = lambda fg='color1', bg="dark", fontsize=14, text="?": widget.TextBox(
 powerline = lambda fg="light", bg="dark": widget.TextBox(
     **base(fg, bg),
     text=" ",
-    fontsize=37,
+    fontsize=15,
     padding=-2
 )
 
@@ -27,10 +27,10 @@ workspaces = lambda: [
     widget.GroupBox(
         **base(fg='light'),
         font='UbuntuMono Nerd Font',
-        fontsize=15,
+        fontsize=12,
         margin_y=3,
         padding_y=8,
-        spacing=25,
+        spacing=20,
         borderwidth=1,
         active=colors['active'],
         inactive=colors['inactive'],
@@ -45,7 +45,7 @@ workspaces = lambda: [
         disable_drag=True
     ),
     separator(),
-    widget.WindowName(**base(fg='focus'), fontsize=14, padding=15),
+    widget.WindowName(**base(fg='focus'), fontsize=12, padding=10),
     separator(),
 ]
 
@@ -55,7 +55,7 @@ primary_widgets = [
     separator(),
 
     icon(fg="color4", text=' '),
-    widget.Memory(**base(fg='color4'), update_interval=5000),
+    widget.Memory(**base(fg='color4')),
 
     powerline('color3'),
     icon(fg="color3", text=' '),

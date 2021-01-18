@@ -1,6 +1,4 @@
-# Antonio Sarosi
-# https://youtube.com/c/antoniosarosi
-# https://github.com/antoniosarosi/dotfiles
+#Javier Zetina
 
 from libqtile import layout
 from settings.theme import colors
