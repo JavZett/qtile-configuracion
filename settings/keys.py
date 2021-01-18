@@ -82,4 +82,17 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
         "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     )),
 
+    #Multimedia Keys
+    # sudo pacman -S playerctl
+
+    ([], "XF86AudioPlay", lazy.spawn(
+        "playerctl play-pause"
+    )),
+     ([], "XF86AudioNext", lazy.spawn(
+        "playerctl next"
+    )),
+     ([], "XF86AudioPrev", lazy.spawn(
+        "playerctl previous"
+    )),
+
 ]]
