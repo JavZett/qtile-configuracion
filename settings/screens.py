@@ -8,7 +8,7 @@ from settings.widgets import primary_widgets, secondary_widgets
 import subprocess
 
 
-status_bar = lambda widgets: bar.Bar(widgets, 20, opacity=0.9, margin=5)
+status_bar = lambda widgets: bar.Bar(widgets, 20, opacity=0.9, margin=4)
 
 screens = [Screen(top=status_bar(primary_widgets))]
 
